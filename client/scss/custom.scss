@@ -1,0 +1,33 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/* colors */
+$primary: #00072D;
+$secondary: #001C55;
+$first: #0A2472;
+$second: #0E6BA8;
+
+.enlaces a {
+    text-decoration: none;
+    color: $second;
+}
+
+body {
+    background-color: $primary;
+    color: $second;
+}
+
+.navbar {
+    background-color: $primary !important;
+}
+
+.navbar-brand {
+    color: $second !important;
+}
+
+.izquierda_barra, .derecha_barra {
+    background-color: $primary !important;
+}
+
+.botonSalvar {
+    background-color: $second;
+}

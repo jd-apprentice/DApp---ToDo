@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/custom.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Scripts -->
+    <script src="./libs/@truffle/contract/dist/truffle-contract.min.js"></script>
+    <script type="module" src="./app.js" defer></script>
+    <script type="module" src="./ui.js" defer></script>
+    <title>DApp - ToDo</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light my-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#!">
+            <i class="bi bi-bookmark-plus mx-2"></i>DApp - ToDo</a
+          >
+          <div class="enlaces">
+            <a href="#!">Hola</a>
+            <a href="#!">Contacto</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-4 izquierda_barra">
+          <div class="card card-body mb-4 bg-dark">
+            <h4 class="text-muted"><i class="bi bi-wallet2"></i> Wallet</h4>
+            <h6 id="wallet"></h6>
+          </div>
+          <form class="card card-body bg-dark" id="getTask">
+            <h4>Guardar una tarea</h4>
+            <input
+              type="text"
+              name="title"
+              placeholder="Escribi una tarea"
+              class="form-control bg-dark text-white border-0 my-3"
+            />
+            <textarea
+              rows="2"
+              name="description"
+              placeholder="Tengo que hacer algo?"
+              class="form-control bg-dark text-white my-3 border-0"
+            ></textarea>
+            <button class="btn btn-primary">Guardar</button>
+          </form>
+        </div>
+        <div class="col-md-8">
+          <div id="taskList" class="derecha_barra card bg-dark"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "dapp_todo",
+  "version": "1.0.0",
+  "description": "aplicacion decentralizada",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@truffle/contract": "^4.3.36",
+    "bootstrap": "^5.1.1",
+    "lite-server": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jd-apprentice/DApp---ToDo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jd-apprentice/DApp---ToDo/issues"
+  },
+  "homepage": "https://github.com/jd-apprentice/DApp---ToDo#readme"
+}
